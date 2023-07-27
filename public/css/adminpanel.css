@@ -1,0 +1,11 @@
+h2{
+ color: white;
+ text-align: center;
+ font-family: monospace;
+ padding: 10px;
+}
+
+.row{
+  text-align: center;
+  align-items: center;
+}

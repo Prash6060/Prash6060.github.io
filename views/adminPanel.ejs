@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/adminpanel.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark mb-5">
+    <h2>Election Administrator</h2>
+    <form class="" action="/" method="get">
+      <button class="btn btn-primary" type="submit">logout</button>
+    </form>
+  </nav>
+  <div class="container">
+    <div class="row" >
+      <div class="card text-white bg-danger ml-5 mt-3 col-md-6 col-lg-3" style="width: 18rem;">
+        <div class="card-header">
+          <form class="" action="/startelection" method="post">
+            <button class="btn btn-outline-dark" type="submit">Start Election</button>
+          </form>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Want to start Election?</h5>
+          <p class="card-text">You can click on this button to start the Election on a secured BlockChain network. </p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-info ml-5 mt-3 col-md-6 col-lg-3" style="width: 18rem;">
+        <div class="card-header">
+           <form class="" action="/stopelection" method="post">
+            <button class="btn btn-outline-dark" type="submit">Stop Election</button>
+          </form>  </div>
+        <div class="card-body">
+          <h5 class="card-title">Want to stop Election?</h5>
+          <p class="card-text">You can click on this button to stop the Election. You can view results after stopping.</p>
+        </div>
+      </div>
+      <div class="card bg-light  ml-5 mt-3 col-md-6 col-lg-3" style="width: 18rem;">
+        <div class="card-header">
+          <form class="" action="/getresult" method="post">
+            <button class="btn btn-outline-dark" type="submit">Get Result</button>
+          </form>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Winner of the Election</h5>
+          <p class="card-text">The results of the election will be fetched from the secure blockchain network.</p>
+        </div>
+      </div>
+
+  </div>
+
+</body>
+
+</html>

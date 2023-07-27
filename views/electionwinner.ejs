@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Winners</title>
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <%for(var i=0;i<winnerlist.length;i++){%>
+  <h1 class="display-4"> <%= winnerlist[i] %> </h1>
+  <% } %>
+  <hr class="my-4">
+  <p>Is the winner of this Election.</p>
+  <form class="lead" action="/votingblocks" method="get">
+      <button class="btn btn-primary" type="submit">Get Vote Blocks</button>
+  </form>
+</div>
+  </body>
+</html>
